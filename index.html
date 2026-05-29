@@ -8,7 +8,7 @@
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Mesto</title>
-    <script type="module" crossorigin src="./assets/index-C68SwNJB.js"></script>
+    <script type="module" crossorigin src="./assets/index-CkWmSsU1.js"></script>
     <link rel="stylesheet" crossorigin href="./assets/index-D2z4Cjqv.css">
   </head>
   <body class="page">
@@ -56,7 +56,7 @@
                 data-error-message="Разрешены только латинские, кириллические буквы, знаки дефиса и пробелы"
                 required
               />
-              <span class="popup__input-error user-name-error"></span>
+              <span class="popup__input-error popup__error user-name-error"></span>
             </label>
             <label class="popup__label">
               <input
@@ -69,7 +69,7 @@
                 maxlength="200"
                 required
               />
-              <span class="popup__input-error user-description-error"></span>
+              <span class="popup__input-error popup__error user-description-error"></span>
             </label>
             <button type="submit" class="button popup__button">
               Сохранить
@@ -96,7 +96,7 @@
                 data-error-message="Разрешены только латинские, кириллические буквы, знаки дефиса и пробелы"
                 required
               />
-              <span class="popup__input-error place-name-error"></span>
+              <span class="popup__input-error popup__error place-name-error"></span>
             </label>
             <label class="popup__label">
               <input
@@ -107,7 +107,7 @@
                 placeholder="Ссылка на картинку"
                 required
               />
-              <span class="popup__input-error place-link-error"></span>
+              <span class="popup__input-error popup__error place-link-error"></span>
             </label>
             <button type="submit" class="button popup__button popup__button_disabled" disabled>
               Создать
@@ -150,7 +150,7 @@
                 placeholder="Ссылка на изображение"
                 required
               />
-              <span class="popup__input-error user-avatar-error"></span>
+              <span class="popup__input-error popup__error user-avatar-error"></span>
             </label>
             <button type="submit" class="button popup__button popup__button_disabled" disabled>
               Сохранить
@@ -164,7 +164,7 @@
           <button type="button" class="popup__close"></button>
           <h3 class="popup__title" id="popup-info-title">Статистика поста</h3>
           <dl class="popup__info" id="popup-info-dl"></dl>
-          <h4 class="popup__text" style="margin-top: 20px;">Кто лайкнул:</h4>
+          <h4 class="popup__text">Кто лайкнул:</h4>
           <ul class="popup__list" id="popup-info-users-list"></ul>
         </div>
       </div>
@@ -190,8 +190,8 @@
 
     <template id="popup-info-definition-template">
       <div class="popup__info-item">
-        <dt class="popup__info-term" style="font-weight: bold; display: inline;"></dt>
-        <dd class="popup__info-description" style="display: inline; margin-left: 5px;"></dd>
+        <dt class="popup__info-term"></dt>
+        <dd class="popup__info-description"></dd>
       </div>
     </template>
 
